@@ -1,0 +1,335 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage[nottoc]{tocbibind}
+\graphicspath{ {./images/} }
+\geometry{margin=2.5cm}
+\usepackage{blindtext}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{SRP/2020/V1.1}
+\cfoot{SYDE-BME Project-Based WKRPT \# 200, Sammy Robens-Paradise}
+\rfoot{Page \thepage \hspace{1pt}}
+\title{A Comparison of Software Source Code Control Systems in Modern Software Development}
+\author{Sammy Robens-Paradise ID: 20709541}
+\date{\today}
+\begin{document}
+\maketitle
+\centering{Systems Design Engineering, 2023}\\
+\centering
+Department of Systems Design Engineering, University of Waterloo
+\justify
+\textit{Abstract} – The concept of controlling and managing different concurrent versions of a project or product was not invented by the software industry but was adopted from classical engineering fields which used specs and version numbers allowing engineers to work on separate components of a larger project –such as a plane \cite{history-of-version-control}. Software engineers quickly cooped the usage of these systems into Source Code Control Systems (SCCS) to store revisions between versions of source code on a centralized server, known as Centralized Version Control Systems (CVCS), and then to Distributed Version Control Systems (DVCS). DVCS allow for changes to the source code to remain locally on a developer’s computer, as opposed to on a centralized server. This report compares the relative software development experience between the Centralized Version Control System, Subversion (SVN) hosted on a private server, and Distributed Version Control System Git, hosted on GitHub at PUMA Utility Monitoring (PUMA), a Canadian SAAS company in Vancouver, BC.
+\justify
+\textit{Keywords} – Git, SVN, Distributed Version Control Systems, Centralized Versions Systems
+\begin{center}
+     \section*{I. SITUATION OF CONCERN \& PROJECT OBJECTIVES} 
+\end{center}
+ {
+\justify
+\paragraph
+\indent
+PUMA was interested in exploring new Source Code Control Systems (SCCS), and a migration from a Centralized Version Control System (CVCS) to a Distributed Version Control System (DVCS)  for three distinct reasons: 1) Before the addition of another Software Developer, the PUMA development team consisted of two developers, who focused on different application components. The introduction of a third developer who worked across the entire application resulted in more code conflicts. PUMA Product managers observed an increase in revisions with version and code conflicts (merge conflicts) from 10\% to 30\% over 480 hours of development across 3 developers. 2), Developers using PUMA’s current CVCS prior to migration did not discuss or review code changes before they were deployed to PUMA’s development environment, something that had been shown to increase the number of post-release failures while using CVC Systems \cite{distributed-software-quality} and 3), the use of a distributed source control system may provide more flexibility for developers, by allowing them to apply commits locally without sending code changes to a remote server.
+\\
+\indent
+The investigative comparison and migration from CVCS to DVCS affected three user groups. The first, being the primary users, were developers who were actively developing code for PUMA and directly used the Source Code Control System. These users were required to maintain a working understanding of the SCCS so that they could efficiently deploy code and collaborate on projects. Secondary users were product managers and owners who did not directly interact with the SCCS but had ownership over the product the SCCS maintained. Tertiary users were investors and external parties who were interested in promoting efficient development practices.
+\\
+\indent	
+The objective of the project discussed in this report was to determine the most appropriate method of migration from a CVCS to a DCVS and the situation of concern was thus determine whether a migration from a centralized version control system to a distributed version control system resulted in a more efficient software development life-cycle, from the standpoint of primary users.
+\\
+\indent
+To make such a determination, one quantitative metric, and two qualitative metrics were used. The quantitative metric was the number of development minutes the development team spent working on source \textit{Code Administration}. This includes resolving code conflicts, setting up development environments and product deployment management. The data was collected from timetable billing records and SCCS logs before and after migration. The qualitative metrics was the amount of frustration that primary users felt during the source code migration and whether or not primary users felt that the migration from CVCS to DVCS was beneficial to their workflow. This feedback was collected by conducting virtual meetings with primary users before, and after the migration.
+\\
+\indent
+These metrics were chosen to understand both the effect on development efficiency and the development experience. The number of minutes of code administration was chosen over a more specific metric because they fluctuate drastically based on the feature or project the development team is working on, as well as whether or not each developer is working on the same part of the application or separate features. This could create an erroneous baseline and show that a SCCS migration is substantially more, or less effective than an expected median.
+\\
+\indent
+A number of assumptions were made when conducting the analysis. The first assumption was that the development team would transition from their current branching flow, to what is commonly referred to as the \textit{“Git workflow”}, with the adoption of the DVCS Git and GitHub. The workflow prior to migration while using CVCS, in this case Subversion \textit{(SVN)} is what the Apache Working Group for Subversion refers to as the “Never-Branch-System” \cite{software-best-practices}. The “Never-Branch-System” works on the basis that developers regularly commit their changes (save them to the remove server/repository) on a main branch, commonly referred to in SVN as \textit{/trunk} \cite{software-best-practices}. The benefits of this workflow are 1) “A low barrier to entry [for developers]” since they do not need to understand or worry about multi-branching \cite{software-best-practices}, and the simplicity of having the most up-to-date code in one central branch. To deploy code, a single developer, with the role of deployment controller would either merge the \textit{/trunk} branch into a \textit{/production} branch, or manually copy source files over to a \textit{/production} branch and commit code to the remote branch. This action would trigger an automatic build and app deployment with the latest code changes (Figure 1). 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/svn-flow.png}
+\caption{PUMA Custom SVN CVCS Workflow [Image source: SRP, 2020]}
+\end{figure}
+\\
+\indent
+The drawbacks of this approach are that if faulty code is committed, it is will break the code base blocking further development because revision history is maintained only on the remote server. This varies from the Git, and GitHub workflow.
+\\
+\indent
+The Git workflow has been adopted by GitHub to consist of 6 main components in its simplest form.  \cite{understanding-git-workflow} 1) involves the creation of a branch from the current working copy of the code. On the created branch, referred to as a \textit{feature-branch}, developers make appropriate changes. 2) then developers locally commit their code changes with an associated comment. 3) developers open a pull request (a comparative diff) against the main branch. 4) developers then collaborate and discuss code changes on the \textit{pull request} and decide if code can be merged into the main branch in its current state. 5) GitHub provides the ability automatically deploy or run automated tests on code in a specific branch. 6) the \textit{feature-branch} is merged into the main branch if the \textit{pull request is approved} (Figure 2). 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/github-flow.png}
+\caption{Proposed PUMA Git \& GitHub DVCS Workflow [Image source: SRP, 2020]}
+\end{figure}
+\\
+\indent
+The second assumption was that the three developers taking part in the project would not change their coding. More simply put: If a developer wrote a component of source code in a particular way, it was assumed that post-migration, should a developer be tasked with writing an identical component, they would write it the same way. Without making this assumption, it would be challenging arrive at particular conclusion about the resulting efficiency from a CVCS to DVCS migration.  The third assumption is that there is at least one developer with a working understanding of the DVCS Git as was the case during this migration.
+}
+\newpage
+\centering
+\section*{II. ENGINEERING ANALYSIS}
+\justify
+\paragraph
+\indent
+To determine the best method of migration three approaches were evaluated using a computational decision matrix. The methods varied on a scale of instantaneous, to staggered migration of the SCCS from CVCS to DVCS, where on one end, a complete migration of all of PUMA’s projects would occur at once, and developers would immediately switch over from Subversion (SVN) to Git and GitHub. On the other end of the spectrum each project would be individually migrated and setup on GitHub. In the center, was a clustering approach, where a single—non-essential project would be migrated to GitHub and Git from SVN. Then the remaining projects would be migrated in a cluster once the first project was in a stable. Each option was given a ranking on a five-point scale of range [-2, +2] where 0 indicated that the impact was negligible, “+” indicated a positive relationship and “-” indicated a negative relationship. Each metric was given a weight range [1,3] where 3 was of the most importance, and 1 the least (Table 1).
+\begin{table}[h]
+\caption{SVN to GitHub Computational Decision Matrix [Source:  SRP, 2020]}
+\begin{tabular}{||p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}||}
+\toprule
+Metric &
+  Low Complexity of method execution.
+  Complex execution will result in an increased opportunity for errors to take place &
+  Low Complexity of code administration. There is added complexity with the need to maintain two SSCS simultaneously which increases the opportunity for errors and failure &
+  Low Educational Cost for developers. Will developers need to spend time becoming comfortable with a different SCCS, reducing development time. &
+  High Risk to ongoing projects. Will there be a high risk to existing (incomplete) projects that developers are currently working on, such as loss of commit/version history &
+  \multirow{2}{*}{Results} \\ \cmidrule(r){1-5}
+Approach vs. Weight                                  & 1  & 2  & 2  & 3  &    \\ \midrule
+\midrule
+Complete, one-time migration from CVCS to DVCS       & +2 & +2 & -2 & -2 & -4 \\ \midrule
+Clustered migration from CVCS to DVCS                & +1 & -1 & +2 & +1 & \textbf{+6} \\ \midrule
+One-at-a-time project migration from CVCS to DVCS & -2 & -2 & +2 & +2 & +4 \\ \bottomrule
+\end{tabular}
+\end{table}
+\justify
+\paragraph
+\indent
+The weighting was multiplied by the relationship and a sum of each relative indicator was taken to quantitatively determine the best approach:
+\[ result = \sum weight_j_2 \cdot relationship_i \]
+\justify
+\paragraph
+\indent
+In Addition to the decision matrix, developers were asked which approach they would prefer. There were three developers that would be impacted by the decision. Developer 1 was reluctant to undertake a SCCS migration from CVCS to DVCS because they had become accustomed to a CVCS workflow (Figure 1) and feared they would be less capable as a software developer post migration and preferred a cautious approach. Developer 2 had previous experience using both CVCS and DVCS. While they felt more comfortable using Git and GitHub (DVCS), they expressed little preference one way or another in regard to the migration process. Developer 3 participating in the migration was a proponent of Git and GitHub because their preexisting experience using effectively using the DVCS and proposed a complete migration to reduce SCCS overlap.
+\\
+\indent
+Based on the qualitative feedback and input from the three developers, and the results gathered from the SVN to GitHub Computational Decision Matrix (Table 1), The “clustering” approach was chosen as the best methodology to perform the migration from CVCS to DVCS because it allowed developers to migrate over a non-essential or infrequently used application and stabilize it before migrating the remaining projects. In this migration approach, the application PUMA.Admin was chosen to migrate first because it is an internal-facing application and was relatively inactive in terms of ongoing development work. Once PUMA.Admin was successfully migrated and was shown to be stable, the rest of the project applications were to be migrated together in a cluster.
+\\
+\indent
+This approach caused minimal disruption to ongoing development, low risk for user-facing products and a decreased opportunity for source code corruption, and an opportunity for developers to explore Git and GitHub before they were fully immersed in the DVCS.
+\\
+\indent
+Migrating a project from Subversion (SVN) to Git and GitHub has been done before but presented a number of challenges that needed to be handled during the migration.  Subversion (SVN) and Git and GitHub store commit history differently, and Git stores more information than SVN in each commit. There are two significant differences in the way information is stored between Subversion (SVN) and Git (Table 2) \cite{git-svn-difference,svn-history,making-sense-of-control-systems}.
+\begin{table}[h]
+\caption{SVN \& GitHub Comparison [Source:  SRP, 2020]}
+\begin{tabular}{||p{2cm}|p{7cm}|p{7cm}||}
+\toprule
+SCCS vs. Difference &
+Branches &
+Commits &
+\midrule
+\midrule
+Git and GitHub & Git and GitHub enforce a strict branching structure, where each branch contains a snapshot of an entire repository. This means that a given branch, is simply just an instance of a central repository that has been pulled off of a main parent branch.\cite{git-svn-difference} Changes to the current branch are tracked by Git over the entire repository, all within the same directory. This means that a developer can switch branches, effectively changing development contexts without leaving a repository and/or directory. & Git captures information such as user emails in each commit and does not need to store in a linear model. For example, If a branch with diverging code is merged into a main branch such as master then Git will reapply changes as commits to the master branch. \cite{git-svn-difference}Git also only stores change-sets between code commits, giving it the ability to better determine and automatically resolve merge conflicts between two branches. Git commits also contain a hash that can be thought of as a pointer to a specific instance of the code on a branch, rather than a particular copy of the code.   \\ \midrule
+Subversion (SVN) & SVN has a large degree of freedom in relation to branching. It does not enforce any particular branch structure, and in fact, the idea of branching in svn is more of an “agreed upon” concept rather than a core feature of the SCCS \cite{making-sense-of-control-systems}.  SVN tracks directories and files, rather than branches. meaning a particular branch is just a named directory in a central repository. Furthermore, SVN will only apply changes to the current context. An absent-minded commit can leave broken change tree”. & SVN commits occur in linear order, meaning code changes cannot be re-applied to a base branch but are  to be interpreted as revisions, which can be thought of  as a snapshot of an entire file system and its files at a particular moment in time. Since SVN does not track code changes, merging one branch into another simply means applying a particular snapshot of a file system to another file system. This is much harder for SVN to reconcile, and often results in vast amounts of “merge conflicts”. SVN also does not store user emails. \\
+ \bottomrule
+\end{tabular}
+\end{table}
+\justify
+\paragraph
+\indent
+Git contains the command-line tool git-svn that allows “Bidirectional operation between a Subversion repository and Git” \cite{git-svn}. because Git and SVN store commit history differently, git-svn works by recursively looping through an SVN repository’s commit history then each SVN branch/directory and checking out each revision \cite{git-svn}. Each revision is then committed to a new Git repository and matched to a Git branch. To automate this process, Sammy Robens-Paradise wrote a shell script to automate this process shown below in simplified form that was executed for each software project that PUMA maintained:
+\begin{lstlisting}
+#!/bin/sh
+# get URL, directory path, and username as user input
+while getopts "a:b:c:" opt; do
+case "$opt" in
+a) url="$OPTARG" ;;
+b) dirpath="$OPTARG" ;;
+c) name="$OPTARG" ;;
+esac
+done
+cd $dirpath
+# checkout svn repository
+svn checkout $url
+[ -d migration ] mkdir migration
+cd "$name"
+# make user file to match emails to usernames
+touch users.txt
+svn log --xml --quiet | grep author | sort -u |
+perl -pe 's/.*>(.*?)<.*/$1 = /' >users.txt
+read -p
+# make changes to file and match username to emails
+vi users.txt
+# clone and recursively apply commits to Git repository
+git svn clone $url --authors-file=users.txt --no-metadata --prefix "" -s ../migration/$name
+cd ../migration/$name
+# cleanup branch names and tags
+for t in $(Git for-each-ref --format='%(refname:short)' refs/remotes/tags); do Git tag ${t/tags\//} $t && Git branch -D -r $t; done
+for b in $(Git for-each-ref --format='%(refname:short)' refs/remotes); do Git branch $b refs/remotes/$b && Git branch -D -r $b; done
+for p in $(Git for-each-ref --format='%(refname:short)' | grep @); do Git branch -D $p; done
+Git branch -d trunk
+# finish
+Done
+\end{lstlisting}
+\justify
+\paragraph
+\indent
+The process could not be fully automated because Git stores a user’s email and SVN does not. Thus, a relationship between a user’s name in SVN and an email must be defined. This is done in a text file automatically generated by the Shell script, however an email associated with each user who committed to the SVN repository had to be manually entered.
+\\
+\indent
+\justify
+The complete analysis process and migration design involved four components. The First being the collection of qualitative feedback from primary users as well as the collection of a qualitative metric: source Code Administration. Two, the first project, migrated over to Git and GitHub from SVN and was connected to a continuous deployment pipeline. Three, the remaining projects were migrated in a cluster from SVN to Git and GitHub and also connected to a continuous deployment pipeline. Finally, four, qualitative and quantitative data was once again collected and the results were analyzed.
+\newpage
+\centering
+\section*{III.	RESULTS} 
+\justify
+\paragraph
+\indent
+The following tables outline the results that were collected before and after the design change from a CVCS SVN server to a DVCS Git version control system hosted and maintained by GitHub:
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{images/svn-code-admin-min.png}
+\caption{Pre-Migration SVN Code Administration [Image source: SRP, 2020]}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{images/avg-svn-code-admin-min.png}
+\caption{Pre-Migration SVN Code Administration Trend [Image source: SRP, 2020]}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{images/git-code-admin-min.png}
+\caption{Post-Migration Git Code Administration Minutes Chart [Image source:  SRP, 2020]}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.3\textwidth]{images/avg-git-code-admin-trend.png}
+\caption{Post-Migration Git Code Administration Minutes Trend [Image source: SRP, 2020]}
+\end{figure}
+\justify
+\paragraph
+\indent
+What was by observed comparing the Code Administration metric was that on average the number of Code Administration minutes decreased between the pre—and post-migration from SVN to Git. Previously, the average time spent interacting with the SCCS was 368 minutes per 40-hour work week relative the time spent interacting with the SCCS post migration, which was 215 minutes. A decrease of 42\% in time spent. Additionally, the average slope of trend for the number of minutes spent conducting code administration using CVCS was -2.71, relative to the average slope of trend for the number of minutes spent conducting code administration using DVCS which was -20.3. Quantitative results above are supplemented by two qualitative metrics shown in Table 3:
+\newpage
+\begin{table}[h]
+\centering
+\caption{Qualitative User Feedback Pre, and Post Migration from. CVCS to DVCS [Source:  SRP, 2020]}
+\begin{tabular}{||p{3cm}|p{4cm}|p{4cm}|p{4cm}||}
+\toprule
+\textbf{Metric}  &
+\textbf{CVCS Pre Migration Feedback}  &
+\textbf{During Migration  Feedback} & 
+\textbf{DVCS Post Migration Feedback}
+\\
+\midrule
+\textbf{Developer vs. Question} &
+Is the current SSCS system beneficial to your workflow? &Do you feel frustrated with the migration from a CVCS to a DVCS? & 
+Is the current SSCS system beneficial to your workflow? \\
+\midrule
+Developer 1: No Experience with Git & No Opinion. No notable complaints about the current CVCS system. feel as though it is beneficial because it is what is comfortable  & No. But overwhelmed by transition and [the] need to learn new technology. & Speculative Yes.  Not yet comfortable with DVCS, stated that that they continue to feel more comfortable each time they interact with system.\\ \midrule
+\midrule
+Developer 2:  Experience with Git  & No. Recognized that when working with multiple developers probability of merge conflicts increases, resulting in workflow disruption & No. Worried about the ability of other developers to maintain their workflow post migration to DVCS. & Yes. User is satisfied with alignment with industry standard and believes that DVCS brings added benefit to a collaborative code workflow.  \\ \midrule
+Developer 3:  Experience with Git & No. Recognizes the pitfalls of CVCS and is a proponent of migration. Feels as though  CVCS is not beneficial to workflow & No. Worried about the ability of other developers to maintain their workflow post migration to DVCS. & Yes. Satisfied with the ability that DVCS and the Git Flow provides to collaborate with other developers and manage branches from one directory.  \\ \bottomrule
+\end{tabular}
+\end{table}
+\begin{center}
+    \section*{IV. DISCUSSION}
+\end{center}
+\justifying
+\paragraph
+\indent
+Comparing qualitative and quantitative data collected before, and after migration from a CVCS to a DVCS showed a decrease in the average number of minutes the three developers spent conducting code administration. Furthermore, the average slope trend of code administration post-migration was about approximately 7.5 times smaller than it was previously. What makes these findings even more interesting, is that the post-migration data was collected in 40-hour work week immediately following the migration. Using multiple trace theory, it can be induced that as developers continue to use the Git DVCS and repeat actions their task recall will improve and so will their efficiency \cite{trace-theory}. Given the results shown within the first week post-migration, the results indicate that a migration from CVCS using Subversion (SVN) to a DVCS based on Git and GitHub using the standard GitHub Workflow (Figure 2) showed a link to a decrease in time spent conducting code administration tasks.
+\\
+\indent
+This was observed for two notable reasons: The first pertains to the establishment of a development environment. Under the CVCS SVN model, directories are treated as branches. This means that for each branch a developer would have liked to create, they also needed to instantiate a development environment. This meant adjusting operating system permissions, adding configuration files and configuring Windows Internet Information Services (IIS) for local development, all taking a significant amount of time and often requiring troubleshooting. It was also the reason why the development team at PUMA adhered to the “Never-Branch-System” which had its own drawbacks \cite{software-best-practices}. Under the DVCS Git model, developers could change branches all from within the same directory and development environment, completely eliminating the need to setup multiple development environments for each branch. This saves a substantial amount of time and the usage of branches added negligible development time. The second reason is the difference in the way SVN and Git handle merge conflicts. SVN attempts to reconcile an entire line-by-line file change, causing often “erroneous” merge conflicts such as a change in white space that need to be manually resolved by a developer. This means that developers often spent valuable time resolving mundane merge conflicts. Git on the other hand, tracks change-sets (see Table 2 for a more detailed comparison). This means that developers need only intervene when there are significant or substantiated merge conflicts such as the change of a specific code path. This also greatly reduced the amount of time developers spent on code administration tasks.
+\\
+\indent
+Another interesting observation is that one developer (developer 1 in Table 3) indicated that they were still not yet completely comfortable with the DVCS model post migration this can be observed in Figure 6, where on the first day of the data collection week they spent 221 minutes (49\%) of their 450 minute workday dealing only with code administration tasks. As they got more comfortable however, this daily number quickly decreased later in the data collection period (Figure 6).
+\begin{center}
+    \section*{V. LIMITATIONS OF METHODS USED}
+\end{center}
+\justify
+\paragraph
+\indent
+Because the developers participating in the migration take on multiple roles in the software development life cycle, it was hard to get a precise picture of the exact quantitative amount of time that developers truly spent conducing code administration in the average week, since each week was somewhat different. The consequence of this is that it was nearly impossible to conduct an exact comparative analysis from before and after the migration from a CVCS to a CVCS because no development week is exactly the same. This could cause skewed results meaning that while the conclusion may be accurate for a particular development week, it cannot be generalized to an entire software development life cycle. While qualitative assessment of primary users mitigated some of this error, it is by no means a substitute for quantitative results. Another limitation on the methods used is the presence of implicit bias in the analysis. It must be noted that Sammy Robens-Paradise proposed an CVCS (SVN) to DVCS (Git) migration, participated in the migration (Developer 3) as well as analyzed and collected qualitative and quantitative data concerning the migration. Because analysis was conducted by a participant, implicit bias could not be neglected and thus limits the accuracy of the comparative methods used to derive a conclusion.
+\begin{center}
+    \section*{VI. CONCLUSIONS}
+\end{center}
+\paragraph
+\indent
+Based on qualitative and quantitative data collected, the average time developers 1,2 and 3, spent conducting code administration decreased by 42\% pre, versus post migration from a CVCS to a DVCS, thus indicating that the usage of the DVCS Git over the CVCS SVN could result in a more efficient software development life cycle across PUMA’s projects because developers were able to spend more time writing code, rather than managing it. It can also be concluded that while there was a historical negative trend in time spent conducting code administration, the efficiency of developers with an SCCS is influenced heavily by their conceptual understanding of the logic and methodology behind the given version control system, whether it be Git or SVN.
+\begin{center}
+    \section*{VII. RECOMMENDATIONS}
+\end{center}
+\textbf{Recommendation:} Software development teams with more than two developers working on Unicode-based languages and currently using SVN as their SCCS should consider use the clustering approach discussed in this report to migrate to Git or an equivalent DVCS.\\
+\textbf{Rationale:} Qualitative and quantitative analysis conducted as part of this report indicates that Git provides the resources linked to an increase in effectiveness of the software development life cycle by reducing the amount of time developers must spend managing their code relative to writing it. \\
+\textbf{Costs:} With the assumption that there is at least one developer with a working understanding of DVCS and the skill set to perform migrations, it is estimated based on the timelines observed during this migration that it would take a single developer approximately 60 developer-hours to conduct project migrations using the clustering migration approach. Logically, it would take two capable developers 30 hours each to conduct the same migration. Using the median hourly rate of software developers in Canada as \$25.01 CAD/Hour \cite{software-pay-scale}, and the GitHub’s current price-per-user/month (September 2020)[k] than an estimated cost would be calculated by:
+\[ \$ cost \approx \$25.01 \cdot (60 + hours_a_d_d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_t_h_s \]
+\\
+\textbf{Benefits:} There are two reasons why teams should undergo a migration from SVN to Git. First, Git has been shown to produce less merge conflicts, and the ability to locally commit code as well as collaborate on “pull requests” was qualitatively linked to a. more desirable development experience. Secondly, based on the data collected, and assuming the average hourly rate for a software developer in Canada to be \$25.01 CAD/Hour \cite{software-pay-scale}, developers would save a median of 51 minutes of development time per week based on the data collected from PUMA’s migration. This translates to annual savings of \$1065 CAD/year, compared to the relative average cost of Git and GitHub per developer with the migration factored in at \$508 CAD/year. Which can be thought of as additional 22 hours of development time per developer per year. For developers earning more, savings would increase, since the cost of GitHub is independent of a developer’s salary.
+\\
+\begin{center}
+    \section*{ACKNOWLEDGMENTS}
+\end{center}
+\paragraph
+\indent
+Thank you to Rob Kraft, P. Eng., MASc. President of PUMA, Elina Poversky, Sr. Computer Scientist at PUMA and Stephen Leong, Developer at Bayleaf Software for participating in countless interviews, project meetings, and the many hours dedicated to source control project planning. 
+
+\begin{thebibliography}{9}
+\bibitem{history-of-version-control} 
+W. Carstensen and W. Carstensen, "A brief history of version control - Redgate Software", \textit{Redgate Software}, 2016. [Online]. Available: https://www.red-gate.com/blog/database-devops/history-of-version-control. [Accessed: 13- Sep- 2020].
+
+\bibitem{distributed-software-quality} 
+Albert Einstein. 
+C. Bird, N. Nagappan, P. Devanbu, H. Gall and B. Murphy, "Does distributed development affect software quality?",\textit{Communications of the ACM}, vol. 52, no. 8, pp. 85-93, 2009. Available: 10.1145/1536616.1536639.
+
+\bibitem{software-best-practices} 
+"Subversion Best Practices", \textit{Svn.apache.org}, 2017. [Online]. Available: https://svn.apache.org/repos/asf/subversion/trunk/doc/user/svn-best-practices.html. [Accessed: 13- Sep- 2020].
+
+\bibitem{understanding-git-workflow}
+"Understanding the GitHub flow · GitHub Guides", \textit{Guides.github.com}, 2020. [Online]. Available: https://guides.Github.com/introduction/flow/. [Accessed: 13- Sep- 2020].
+
+\bibitem{git-svn-difference}
+"Git vs. SVN – What Is The Difference? | Perforce Software", \textit{Perforce Software}, 2020. [Online]. Available: https://www.perforce.com/blog/vcs/Git-vs-svn-what-difference. [Accessed: 13- Sep- 2020].
+
+\bibitem{svn-history}
+B. Collins-Sussman, B. Fitzpatrick and M. Pilato, "Examining History", \textit{Svn.gnu.org.ua}, 2006. [Online]. Available: http://svn.gnu.org.ua/svnbook/svn.tour.history.html. [Accessed: 13- Sep- 2020].
+
+\bibitem{making-sense-of-control-systems}
+B. O’Sullivan, "Making Sense of Revision-control Systems", \textit{Dl.acm.org}, 2020. [Online]. Available: https://dl.acm.org/doi/pdf/10.1145/1594204.1595636. [Accessed: 13- Sep- 2020].
+
+\bibitem{git-svn}
+S. Chacon and J. Long, "Git - Reference", \textit{Git-scm.com}, 2020. [Online]. Available: https://Git-scm.com/docs/Git-svn. [Accessed: 13- Sep- 2020].
+
+\bibitem{trace-theory}
+M. Moscovitch et al., "Functional neuroanatomy of remote episodic, semantic and spatial memory: a unified account based on multiple trace theory",\textit{ Journal of Anatomy}, vol. 207, no. 1, pp. 35-66, 2005. Available: 10.1111/j.1469-7580.2005.00421.x.
+
+\bibitem{software-pay-scale}
+"Software Developer Salary in Canada | PayScale", \textit{Payscale.com}, 2020. [Online]. Available: https://www.payscale.com/research/CA/Job=Software\_Developer/Salary. [Accessed: 13- Sep- 2020].
+\\
+\justify
+\paragraph
+\indent
+\textit{
+Images, tables and graphs presented in this document created by the authors are indicated by author initials and the year of creation.}
+
+\end{thebibliography}
+\end{document}
+
