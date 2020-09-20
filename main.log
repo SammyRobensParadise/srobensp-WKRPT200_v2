@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 SEP 2020 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 SEP 2020 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -149,7 +149,14 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks20
+\float@box=\box47
+\@float@everytoks=\toks21
+\@floatcapt=\box48
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
 
@@ -161,24 +168,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count193
-\c@Blindtext=\count194
-\c@blind@countparstart=\count195
-\blind@countxx=\count196
-\blindtext@numBlindtext=\count197
-\blind@countyy=\count198
-\c@blindlist=\count199
-\c@blindlistlevel=\count266
-\c@blindlist@level=\count267
-\blind@listitem=\count268
-\c@blind@listcount=\count269
-\c@blind@levelcount=\count270
-\blind@mathformula=\count271
-\blind@Mathformula=\count272
-\c@blind@randomcount=\count273
-\c@blind@randommax=\count274
-\c@blind@pangramcount=\count275
-\c@blind@pangrammax=\count276
+\c@blindtext=\count194
+\c@Blindtext=\count195
+\c@blind@countparstart=\count196
+\blind@countxx=\count197
+\blindtext@numBlindtext=\count198
+\blind@countyy=\count199
+\c@blindlist=\count266
+\c@blindlistlevel=\count267
+\c@blindlist@level=\count268
+\blind@listitem=\count269
+\c@blind@listcount=\count270
+\c@blind@levelcount=\count271
+\blind@mathformula=\count272
+\blind@Mathformula=\count273
+\c@blind@randomcount=\count274
+\c@blind@randommax=\count275
+\c@blind@pangramcount=\count276
+\c@blind@pangrammax=\count277
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -204,27 +211,27 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count277
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count278
+\l__pdf_internal_box=\box49
 ) (/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 45.
+LaTeX Info: Redefining \selectfont on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -262,86 +269,86 @@ LaTeX Info: Redefining \selectfont on input line 45.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
+\scratchcounter=\count279
 \scratchdimen=\dimen164
-\scratchbox=\box48
-\nofMPsegments=\count279
-\nofMParguments=\count280
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count281
+\scratchbox=\box50
+\nofMPsegments=\count280
+\nofMParguments=\count281
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count282
 \MPscratchDim=\dimen165
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count284
+\c@lstlisting=\count285
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 45.
+(lastpage)             ! on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 47.
 
 
-LaTeX Warning: Citation `history-of-version-control' on page 1 undefined on input line 51.
+LaTeX Warning: Citation `history-of-version-control' on page 1 undefined on input line 52.
 
 
-LaTeX Warning: Citation `distributed-software-quality' on page 1 undefined on input line 61.
+LaTeX Warning: Citation `distributed-software-quality' on page 1 undefined on input line 62.
 
 
-LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 76.
+LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 77.
 
 
-LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 76.
+LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 77.
 
 
-LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 76.
+LaTeX Warning: Citation `software-best-practices' on page 1 undefined on input line 77.
 
 
-LaTeX Warning: File `images/svn-flow.png' not found on input line 79.
+LaTeX Warning: File `images/svn-flow.png' not found on input line 80.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:79: Package pdftex.def Error: File `images/svn-flow.png' not found: using draft setting.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:80: Package pdftex.def Error: File `images/svn-flow.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 ...[width=0.8\textwidth]{images/svn-flow.png}
+l.80 ...[width=0.8\textwidth]{images/svn-flow.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `understanding-git-workflow' on page 1 undefined on input line 87.
+LaTeX Warning: Citation `understanding-git-workflow' on page 1 undefined on input line 88.
 
 
-LaTeX Warning: File `images/github-flow.png' not found on input line 90.
+LaTeX Warning: File `images/github-flow.png' not found on input line 91.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:90: Package pdftex.def Error: File `images/github-flow.png' not found: using draft setting.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:91: Package pdftex.def Error: File `images/github-flow.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 ...dth=0.8\textwidth]{images/github-flow.png}
+l.91 ...dth=0.8\textwidth]{images/github-flow.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:97: Improper \prevdepth.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:98: Improper \prevdepth.
 \newpage ...everypar {}\fi \par \ifdim \prevdepth 
                                                   >\z@ \vskip -\ifdim \prevd...
-l.97 \newpage
+l.98 \newpage
              
 You can refer to \spacefactor only in horizontal mode;
 you can refer to \prevdepth only in vertical mode; and
@@ -349,13 +356,13 @@ neither of these is meaningful inside \write. So
 I'm forgetting what you said and using zero instead.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:97: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:98: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \newpage
+l.98 \newpage
              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -371,26 +378,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:99: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:100: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.99 \section
-             *{II. ENGINEERING ANALYSIS}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:99: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \section*{II. ENGINEERING ANALYSIS}
-                                        
+l.100 \section
+              *{II. ENGINEERING ANALYSIS}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -401,209 +396,151 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \justify
-              
+l.100 \section*{II. ENGINEERING ANALYSIS}
+                                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 106.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 106.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-[]\OT1/cmr/m/n/10 Low Com-plex-
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 109--110
-\OT1/cmr/m/n/10 ity of method
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-\OT1/cmr/m/n/10 ex-e-cu-tion.
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 109--110
-\OT1/cmr/m/n/10 op-por-tu-nity for
- []
-
-
-Underfull \hbox (badness 4779) in paragraph at lines 109--110
-\OT1/cmr/m/n/10 er-rors to take
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 is added com-
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 need to main-
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 tain two SSCS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 si-mul-ta-ne-ously
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 which in-creases
- []
-
-
-Underfull \hbox (badness 3826) in paragraph at lines 111--111
-\OT1/cmr/m/n/10 for er-rors and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]\OT1/cmr/m/n/10 Low Ed-u-ca-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 tional Cost
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 for de-vel-op-ers.
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 Will de-vel-op-ers
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 need to spend
- []
-
-
-Underfull \hbox (badness 7291) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 time be-com-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 com-fort-able
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\OT1/cmr/m/n/10 de-vel-op-ment
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 go-ing projects.
- []
-
-
-Underfull \hbox (badness 6380) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 Will there be
- []
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 a high risk to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 plete) projects
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 that de-vel-op-ers
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 are cur-rently
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 work-ing on,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-\OT1/cmr/m/n/10 com-mit/ver-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
-[]\OT1/cmr/m/n/10 Approach vs.
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 117--117
-[]\OT1/cmr/m/n/10 Complete, one-
- []
-
-
-Underfull \hbox (badness 4899) in paragraph at lines 117--117
-\OT1/cmr/m/n/10 time mi-gra-tion
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 117--117
-\OT1/cmr/m/n/10 from CVCS to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
-[]\OT1/cmr/m/n/10 Clustered mi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
-\OT1/cmr/m/n/10 gra-tion from
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-[]\OT1/cmr/m/n/10 One-at-a-time
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-\OT1/cmr/m/n/10 project mi-gra-
- []
-
-
-Overfull \hbox (30.76006pt too wide) in paragraph at lines 106--121
-[][] 
- []
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:122: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:101: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 \justify
+l.101 \justify
               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 107.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 107.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 1038) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 tion. Com-plex
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 110--111
+\OT1/cmr/m/n/10 sult in an in-
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 112--112
+\OT1/cmr/m/n/10 added com-plex-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 112--112
+\OT1/cmr/m/n/10 ously which in-
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 112--112
+\OT1/cmr/m/n/10 creases the op-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 113--113
+\OT1/cmr/m/n/10 ers. Will de-
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 113--113
+\OT1/cmr/m/n/10 spend time be-
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 113--113
+\OT1/cmr/m/n/10 duc-ing de-vel-op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 go-ing projects.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 Will there be
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 a high risk to
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 ex-ist-ing (in-com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 plete) projects
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 that de-vel-op-ers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 are cur-rently
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 work-ing on,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 such as loss of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+\OT1/cmr/m/n/10 com-mit/ver-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\OT1/cmr/m/n/10 Approach vs.
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 118--118
+[]\OT1/cmr/m/n/10 Complete, one-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+\OT1/cmr/m/n/10 time mi-gra-tion
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 118--118
+\OT1/cmr/m/n/10 from CVCS to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]\OT1/cmr/m/n/10 One-at-a-time
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+\OT1/cmr/m/n/10 project mi-gra-
+ []
+
+
+Overfull \hbox (30.7609pt too wide) in paragraph at lines 107--122
+[][] 
+ []
 
 
 /Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:123: LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -612,83 +549,93 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 \paragraph
-                
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:126: Double subscript.
-l.126 \[ result = \sum weight_j_
-                                2 \cdot relationship_i \]
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:127: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 \justify
+l.123 \justify
               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 139.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `svn-history' on page 3 undefined on input line 139.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:124: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \paragraph
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `making-sense-of-control-systems' on page 3 undefined on input line 139.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:128: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \justify
+              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `svn-history' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `making-sense-of-control-systems' on page 3 undefined on input line 140.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\OT1/cmr/m/n/10 SCCS vs.
  []
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:146: Extra alignment tab has been changed to \cr.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:147: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.146 Commits &
+l.147 Commits &
                
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 Git and
  []
 
 
-LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 149.
+LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 150.
 
 
-LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 149.
+LaTeX Warning: Citation `git-svn-difference' on page 3 undefined on input line 150.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 []\OT1/cmr/m/n/10 Subversion
  []
 
 
-LaTeX Warning: Citation `making-sense-of-control-systems' on page 3 undefined on input line 150.
+LaTeX Warning: Citation `making-sense-of-control-systems' on page 3 undefined on input line 151.
 
 
-Overfull \hbox (23.21283pt too wide) in paragraph at lines 142--153
+Overfull \hbox (23.21283pt too wide) in paragraph at lines 143--154
 [][] 
  []
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:154: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \justify
+l.155 \justify
               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -698,121 +645,132 @@ If that doesn't work, type  X <return>  to quit.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:156: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \paragraph
+l.156 \paragraph
                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `git-svn' on page 5 undefined on input line 157.
+LaTeX Warning: Citation `git-svn' on page 5 undefined on input line 158.
 
 
-LaTeX Warning: Citation `git-svn' on page 5 undefined on input line 157.
+LaTeX Warning: Citation `git-svn' on page 5 undefined on input line 158.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:158: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:159: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \begin{lstlisting}
+l.159 \begin{lstlisting}
                         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 162.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 163.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [5]
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:197: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:187: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \justify
-              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[6] [7]
-
-LaTeX Warning: File `images/svn-code-admin-min.png' not found on input line 208.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:208: Package pdftex.def Error: File `images/svn-code-admin-min.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 ...textwidth]{images/svn-code-admin-min.png}
-                                                  
+l.187 \begin{justify}
+                     
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/avg-svn-code-admin-min.png' not found on input line 213.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:213: Package pdftex.def Error: File `images/avg-svn-code-admin-min.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.213 ...width]{images/avg-svn-code-admin-min.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/git-code-admin-min.png' not found on input line 218.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:218: Package pdftex.def Error: File `images/git-code-admin-min.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...textwidth]{images/git-code-admin-min.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/avg-git-code-admin-trend.png' not found on input line 223.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:223: Package pdftex.def Error: File `images/avg-git-code-admin-trend.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 ...dth]{images/avg-git-code-admin-trend.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:226: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:192: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.226 \justify
+l.192 \newline
               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:192: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[6]
+
+LaTeX Warning: File `images/svn-code-admin-min.png' not found on input line 201.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:201: Package pdftex.def Error: File `images/svn-code-admin-min.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 ...textwidth]{images/svn-code-admin-min.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:203: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/avg-svn-code-admin-min.png' not found on input line 206.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:206: Package pdftex.def Error: File `images/avg-svn-code-admin-min.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 ...width]{images/avg-svn-code-admin-min.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/git-code-admin-min.png' not found on input line 211.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:211: Package pdftex.def Error: File `images/git-code-admin-min.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...textwidth]{images/git-code-admin-min.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -820,94 +778,102 @@ If that doesn't work, type  X <return>  to quit.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: File `images/avg-git-code-admin-trend.png' not found on input line 216.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:227: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:216: Package pdftex.def Error: File `images/avg-git-code-admin-trend.png' not found: using draft setting.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 \paragraph
-                
+l.216 ...dth]{images/avg-git-code-admin-trend.png}
+                                                  
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:230: LaTeX Error: Something's wrong--perhaps a missing \item.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:223: Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.223 \newpage
+              
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:223: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \newpage
+l.223 \newpage
               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 []\OT1/cmr/bx/n/10 During Mi-gra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--242
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 []\OT1/cmr/bx/n/10 Developer vs.
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 243--243
+Underfull \hbox (badness 4621) in paragraph at lines 236--236
 \OT1/cmr/m/n/10 tem ben-e-fi-cial to your
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 243--243
+Underfull \hbox (badness 4454) in paragraph at lines 236--236
 []\OT1/cmr/m/n/10 Do you feel frus-trated
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 244--245
+Underfull \hbox (badness 4621) in paragraph at lines 237--238
 \OT1/cmr/m/n/10 tem ben-e-fi-cial to your
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 246--246
+Underfull \hbox (badness 2096) in paragraph at lines 239--239
 []\OT1/cmr/m/n/10 Developer 1: No
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 \OT1/cmr/m/n/10 Ex-pe-ri-ence with
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 248--248
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\OT1/cmr/m/n/10 more com-fort-able with
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 241--241
 []\OT1/cmr/m/n/10 No. Rec-og-nized that
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 248--248
-\OT1/cmr/m/n/10 align-ment with in-dus-try
+Underfull \hbox (badness 3250) in paragraph at lines 242--242
+[]\OT1/cmr/m/n/10 No. Feels as though
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 249--249
-\OT1/cmr/m/n/10 abil-ity that DVCS and
+Underfull \hbox (badness 7362) in paragraph at lines 242--242
+\OT1/cmr/m/n/10 pro-vides to col-lab-o-rate
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 249--249
-\OT1/cmr/m/n/10 the Git Flow pro-vides
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 249--249
-\OT1/cmr/m/n/10 de-vel-op-ers and man-age
- []
-
-
-Overfull \hbox (6.76009pt too wide) in paragraph at lines 234--251
+Overfull \hbox (6.76009pt too wide) in paragraph at lines 227--244
  [][] 
  []
 
@@ -915,216 +881,216 @@ Overfull \hbox (6.76009pt too wide) in paragraph at lines 234--251
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:252: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:245: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 \begin{center}
+l.245 \begin{center}
                     
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `trace-theory' on page 9 undefined on input line 258.
+LaTeX Warning: Citation `trace-theory' on page 8 undefined on input line 251.
 
 
-LaTeX Warning: Citation `software-best-practices' on page 9 undefined on input line 261.
+LaTeX Warning: Citation `software-best-practices' on page 8 undefined on input line 254.
 
-[9]
+[8]
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:272: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:265: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \begin{center}
+l.265 \begin{center}
                     
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[10]
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:273: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:266: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.273     \section
+l.266     \section
                   *{VI. CONCLUSIONS}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[9]
 
-LaTeX Warning: Citation `software-pay-scale' on page 11 undefined on input line 283.
+LaTeX Warning: Citation `software-pay-scale' on page 10 undefined on input line 276.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...cost \approx \$25.01 \cdot (60 + hours_a_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...cost \approx \$25.01 \cdot (60 + hours_a_
                                                   d_d_i_t_i_o_n_a_l)+ \$4 \c...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...st \approx \$25.01 \cdot (60 + hours_a_d_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...st \approx \$25.01 \cdot (60 + hours_a_d_
                                                   d_i_t_i_o_n_a_l)+ \$4 \cdo...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ... \approx \$25.01 \cdot (60 + hours_a_d_d_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ... \approx \$25.01 \cdot (60 + hours_a_d_d_
                                                   i_t_i_o_n_a_l)+ \$4 \cdot ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...approx \$25.01 \cdot (60 + hours_a_d_d_i_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...approx \$25.01 \cdot (60 + hours_a_d_d_i_
                                                   t_i_o_n_a_l)+ \$4 \cdot nu...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...prox \$25.01 \cdot (60 + hours_a_d_d_i_t_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...prox \$25.01 \cdot (60 + hours_a_d_d_i_t_
                                                   i_o_n_a_l)+ \$4 \cdot numb...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...ox \$25.01 \cdot (60 + hours_a_d_d_i_t_i_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...ox \$25.01 \cdot (60 + hours_a_d_d_i_t_i_
                                                   o_n_a_l)+ \$4 \cdot number...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ... \$25.01 \cdot (60 + hours_a_d_d_i_t_i_o_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ... \$25.01 \cdot (60 + hours_a_d_d_i_t_i_o_
                                                   n_a_l)+ \$4 \cdot number_d...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...$25.01 \cdot (60 + hours_a_d_d_i_t_i_o_n_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...$25.01 \cdot (60 + hours_a_d_d_i_t_i_o_n_
                                                   a_l)+ \$4 \cdot number_d_e...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...5.01 \cdot (60 + hours_a_d_d_i_t_i_o_n_a_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...5.01 \cdot (60 + hours_a_d_d_i_t_i_o_n_a_
                                                   l)+ \$4 \cdot number_d_e_v...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...a_d_d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...a_d_d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_
                                                   e_v_e_l_o_p_e_r_s  \cdot n...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...d_d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...d_d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_
                                                   v_e_l_o_p_e_r_s  \cdot n_m...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...d_i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_
                                                   e_l_o_p_e_r_s  \cdot n_m_o...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...i_t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_
                                                   l_o_p_e_r_s  \cdot n_m_o_n...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...t_i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_
                                                   o_p_e_r_s  \cdot n_m_o_n_t...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...i_o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_
                                                   p_e_r_s  \cdot n_m_o_n_t_h...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...o_n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_
                                                   e_r_s  \cdot n_m_o_n_t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_e_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...n_a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_e_
                                                   r_s  \cdot n_m_o_n_t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_e_r_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...a_l)+ \$4 \cdot number_d_e_v_e_l_o_p_e_r_
                                                   s  \cdot n_m_o_n_t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...ot number_d_e_v_e_l_o_p_e_r_s  \cdot n_m_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...ot number_d_e_v_e_l_o_p_e_r_s  \cdot n_m_
                                                   o_n_t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ... number_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ... number_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_
                                                   n_t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...umber_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...umber_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_
                                                   t_h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...ber_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_t_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...ber_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_t_
                                                   h_s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:284: Double subscript.
-l.284 ...r_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_t_h_
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:277: Double subscript.
+l.277 ...r_d_e_v_e_l_o_p_e_r_s  \cdot n_m_o_n_t_h_
                                                   s \]
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-LaTeX Warning: Citation `software-pay-scale' on page 11 undefined on input line 286.
+LaTeX Warning: Citation `software-pay-scale' on page 10 undefined on input line 279.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
 
  []
 
 
-/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:290: LaTeX Error: Something's wrong--perhaps a missing \item.
+/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.tex:283: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290 \end{center}
+l.283 \end{center}
                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 []\OT1/cmr/m/n/10 "Subversion Best Prac-tices", \OT1/cmr/m/it/10 Svn.apache.org\OT1/cmr/m/n/10 , 2017. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 304--305
+Underfull \hbox (badness 2744) in paragraph at lines 297--298
 \OT1/cmr/m/n/10 https://svn.apache.org/repos/asf/subversion/trunk/doc/user/svn-best-practices.html. [Ac-cessed: 13-
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 325--327
+Underfull \hbox (badness 1442) in paragraph at lines 318--320
 []\OT1/cmr/m/n/10 "Software De-vel-oper Salary in Canada | PayScale", \OT1/cmr/m/it/10 Payscale.com\OT1/cmr/m/n/10 , 2020. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--327
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 333.
+LaTeX Warning: Empty `thebibliography' environment on input line 326.
 
 
-Package lastpage Warning: Rerun to get the references right on input line 334.
+Package lastpage Warning: Rerun to get the references right on input line 327.
 
 
 AED: lastpage setting LastPage
-[12] (/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.aux)
+[11] (/Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1133,18 +1099,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4898 strings out of 480608
- 71605 string characters out of 5903631
- 555945 words of memory out of 5000000
- 20703 multiletter control sequences out of 15000+600000
+ 4949 strings out of 480608
+ 72308 string characters out of 5903631
+ 549312 words of memory out of 5000000
+ 20750 multiletter control sequences out of 15000+600000
  537898 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,12n,49p,1804b,1820s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on /Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.pdf (12 pages, 211064 bytes).
+ 32i,12n,49p,1610b,1820s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on /Users/sammyrobens-paradise/projects/srobensp-WKRPT200_v2/main.pdf (11 pages, 201023 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
